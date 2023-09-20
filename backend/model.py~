@@ -174,7 +174,7 @@ def most_similar(sentence_vector_lookup, knowledge_vector_lookup, attributes, se
             if consequence_likelihood(best_attributes) == "5":
                 return (sentence_text, [])
             for token in doc:
-            	if token.dep_ == 'ROOT':
+                if token.dep_ == 'ROOT':
                     if previous_token == "can":
                         return (sentence_text, []) #already corrected
                     help_t = "Suggestion: Change '%s' to '%s'" % (token.text, 'can %s' % (token.lemma_))
@@ -186,7 +186,7 @@ def most_similar(sentence_vector_lookup, knowledge_vector_lookup, attributes, se
                     text = sentence_text.replace(token.text, '<span id="%s">%s</span>' % (str(uuid), token.text))
                     html+=text + "</span>"
                     break
-                previous_token=token.lemma_
+                previous_token = token.lemma_
             alert = {'id':uuid, 'help':help_t, 'action':action_t, 'detailed':detailed_t}
             return (html, alert)
         elif best_type == "Position_to_Know":

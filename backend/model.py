@@ -2,7 +2,6 @@
 
 import spacy
 import math
-#import csv
 import sys
 
 import glob
@@ -10,7 +9,6 @@ from sentence2vec import Word, Sentence, sentence_to_vec
 
 from spacy.tokenizer import Tokenizer
 from nltk import sent_tokenize
-#from nltk.tokenize import word_tokenize
 from collections import defaultdict
 
 from collections import namedtuple
@@ -44,7 +42,6 @@ def parse_brat(topic):
     attributes = defaultdict(namedtuple)
     for i, fi in enumerate(glob.glob("./data/%s/*ann" % ( folder ))):
         with open(fi) as fil:
-            #print(fi, file=sys.stderr)
             for l in fil:
                 if l.startswith("T"):
                     l = l.split('\t')
@@ -66,8 +63,6 @@ def parse_brat(topic):
 
 def create_knowledge_vectors(terms):
     embedding_size = 300
-    id_text = defaultdict(str)
-    f_str = ""
 
     knowledge_list = []
     knowledge_list_extras = []
@@ -130,10 +125,8 @@ def consequence_sentiment(attributes):
 
 def most_similar(sentence_vector_lookup, knowledge_vector_lookup, attributes, sentence):
     best_type    = None
-    best_text    = None
     best_dist    = 1000.0
     best_id      = None
-    best_kb_text = None
 
     sentence_text = None
     sentence_vector = None
@@ -147,17 +140,13 @@ def most_similar(sentence_vector_lookup, knowledge_vector_lookup, attributes, se
 
     similar_items = []
     best_attributes = []
-    sia = defaultdict(list)
     for kb_text, (kb_vector, id, term) in knowledge_vector_lookup.items():
         dist = l2_dist(sentence_vector,kb_vector)
         similar_items.append(str("{:.2f}".format(dist))+": " + kb_text)
-        #sia[str("{:.2f}".format(dist))+": " + kb_text] = [term] + [y for x,y in attributes.items() if y.parent == id]
-        #print(sentence, kb_text, str(dist), file=sys.stderr)
         if dist < best_dist:
             best_dist = dist
-            best_kb_text = kb_text
             best_id = id
-            best_attributes = [y for x,y in attributes.items() if y.parent == best_id]
+            best_attributes = [y for _,y in attributes.items() if y.parent == best_id]
             best_type = term.type
 
     similar_items.sort()
@@ -169,12 +158,11 @@ def most_similar(sentence_vector_lookup, knowledge_vector_lookup, attributes, se
         action_t = ''
         detailed_t = ''
         previous_token = None
-        #print(best_kb_text)
         if best_type == "Consequence":
             if consequence_likelihood(best_attributes) == "5":
                 return (sentence_text, [])
             for token in doc:
-            	if token.dep_ == 'ROOT':
+                if token.dep_ == 'ROOT':
                     if previous_token == "can":
                         return (sentence_text, []) #already corrected
                     help_t = "Suggestion: Change '%s' to '%s'" % (token.text, 'can %s' % (token.lemma_))
@@ -186,13 +174,8 @@ def most_similar(sentence_vector_lookup, knowledge_vector_lookup, attributes, se
                     text = sentence_text.replace(token.text, '<span id="%s">%s</span>' % (str(uuid), token.text))
                     html+=text + "</span>"
                     break
-                previous_token=token.lemma_
-            alert = {
-                'id':uuid,
-                'help':help_t,
-                'action':action_t,
-                'detailed':detailed_t
-            }
+                previous_token = token.lemma_
+            alert = {'id':uuid, 'help':help_t, 'action':action_t, 'detailed':detailed_t}
             return (html, alert)
         elif best_type == "Position_to_Know":
             if "Based on my own personal experience" in sentence_text:
@@ -213,7 +196,6 @@ def parse_paragraph(paragraph, knowledge_vector_lookup, attributes):
     alerts = []
     sentences = sent_tokenize(paragraph)
     for sentence in sentences:
-#        print(sentence, file=sys.stderr)
         sentence_vector_lookup = create_sentence_vector(sentence)
         html, alert = most_similar(sentence_vector_lookup, knowledge_vector_lookup, attributes, sentence)
         return_html += html + " "
