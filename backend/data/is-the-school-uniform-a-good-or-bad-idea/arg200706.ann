@@ -1,0 +1,9 @@
+T1	Consequence 27 45	destroy creativity
+A1	Likelihood T1 5
+A2	Sentiment T1 Negative
+T2	Consequence 286 347	turning ""casual clothes"" into a twisted ""causal"" uniform.
+A3	Likelihood T2 3
+A4	Sentiment T2 Negative
+T3	Consequence 136 264	students are given the occasional day to were their casual clothes but are then given strict guidelines as to what is acceptable
+A5	Likelihood T3 4
+A6	Sentiment T3 Negative

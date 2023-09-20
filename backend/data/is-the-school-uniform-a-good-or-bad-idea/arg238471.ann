@@ -1,0 +1,25 @@
+T1	Position_to_Know 22 56	school uniform is very comfortable
+T2	Position_to_Know 474 502	school uniform is convenient
+T3	Consequence 193 254	they concerned about clothes by brand and quantity of clothes
+A1	Likelihood T3 4
+A2	Sentiment T3 Negative
+T4	Consequence 290 321	poor students can feel inferior
+A3	Prudential T4
+A4	Likelihood T4 4
+A5	Sentiment T4 Negative
+A6	Potential T4
+T5	Consequence 373 404	cheap better than plain clothes
+A7	Sentiment T5 Positive
+A8	Adjective T5
+A9	Likelihood T5 4
+T6	Consequence 421 460	sense of kinship and sense of belonging
+A10	Sentiment T6 Positive
+A11	Likelihood T6 4
+T7	Consequence 492 502	convenient
+A12	Sentiment T7 Positive
+A13	Adjective T7
+A14	Likelihood T7 5
+T8	Consequence 45 56	comfortable
+A15	Sentiment T8 Positive
+A16	Adjective T8
+A17	Likelihood T8 5

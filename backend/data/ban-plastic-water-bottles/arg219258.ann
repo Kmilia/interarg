@@ -1,0 +1,20 @@
+T2	Consequence 53 99	it would leave hundreds of people without jobs
+A3	Likelihood T2 4
+A4	Sentiment T2 Negative
+T3	Consequence 108 179	big corporations like Dasani and Nestle would loose millions of dollars
+A5	Likelihood T3 4
+A6	Sentiment T3 Negative
+T5	Consequence 295 327	would only hurt big corporations
+A9	Sentiment T5 Negative
+A10	Adjective T5
+A11	Likelihood T5 4
+T1	Consequence 22 44	would hurt the economy
+A1	Sentiment T1 Negative
+A2	Quantifier T1
+A14	Likelihood T1 4
+A13	Quantifier T2
+A12	Quantifier T3
+T4	Consequence 184 215	would hurt the economy severely
+A7	Sentiment T4 Negative
+A8	Quantifier T4
+A15	Likelihood T4 4

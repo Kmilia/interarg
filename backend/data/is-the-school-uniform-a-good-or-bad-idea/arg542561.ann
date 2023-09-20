@@ -1,0 +1,9 @@
+T1	Consequence 88 154	makes pupils concentrated on their education than on their clothes
+A1	Likelihood T1 4
+A2	Sentiment T1 Positive
+T2	Consequence 189 221	instills discipline among pupils
+A3	Likelihood T2 3
+A4	Sentiment T2 Positive
+T3	Consequence 225 280	makes pupils with diferent material statuses more equal
+A5	Likelihood T3 4
+A6	Sentiment T3 Positive

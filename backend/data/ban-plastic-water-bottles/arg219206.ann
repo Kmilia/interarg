@@ -1,0 +1,9 @@
+T1	Consequence 87 121	hurt an already struggling economy
+A1	Likelihood T1 4
+A2	Sentiment T1 Negative
+T2	Consequence 275 287	big business
+A3	Likelihood T2 4
+A4	Sentiment T2 Positive
+T3	Consequence 536 581	trace when a potential health risk does occur
+A5	Likelihood T3 5
+A6	Sentiment T3 Positive

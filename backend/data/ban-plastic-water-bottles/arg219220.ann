@@ -1,0 +1,12 @@
+T1	Consequence 53 99	water extraction in areas near bottling plants
+A1	Likelihood T1 5
+A2	Sentiment T1 Negative
+T2	Consequence 112 168	water shortages that affect nearby consumers and farmers
+A3	Likelihood T2 5
+A4	Sentiment T2 Negative
+T3	Consequence 189 253	millions of gallons of water used in the plastic-making process,
+A5	Likelihood T3 4
+A6	Sentiment T3 Negative
+T4	Consequence 254 330	two gallons of water are wasted in the purification process for every gallon
+A7	Likelihood T4 4
+A8	Sentiment T4 Negative

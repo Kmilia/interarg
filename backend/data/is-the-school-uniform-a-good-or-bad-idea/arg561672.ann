@@ -1,0 +1,12 @@
+T1	Consequence 6 26	makes everyone equal
+A1	Prudential T1
+A2	Likelihood T1 4
+A3	Sentiment T1 Positive
+T2	Consequence 70 137	children will teased and feel less equal to their peers around them
+A4	Prudential T2
+A5	Likelihood T2 4
+A6	Sentiment T2 Negative
+T3	Consequence 414 470	takes less than 10 min just to take it out and put it on
+A7	Likelihood T3 4
+A8	Sentiment T3 Positive
+T4	Unsure 160 386	Okay Look school is for learning not how you look and dress but maybe in some levels it matters and most people that go to schools that don't have uniforms take like about 1 hr just to find their pants or shirt I mean really??

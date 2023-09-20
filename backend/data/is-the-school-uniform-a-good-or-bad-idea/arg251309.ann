@@ -1,0 +1,16 @@
+T1	Consequence 262 307	gets rid of or reduces students being bullied
+A1	Likelihood T1 5
+A2	Sentiment T1 Positive
+T2	Consequence 442 491	sweep the one basic type of bullying under the ru
+A3	Likelihood T2 4
+A4	Sentiment T2 Negative
+T3	Consequence 548 634	infringes upon their basic rights to be individuals and to express their individuality
+A5	Likelihood T3 5
+A6	Sentiment T3 Negative
+T4	Consequence 175 227	doesn't even address the problem concerning bullying
+A7	Likelihood T4 3
+A8	Sentiment T4 Negative
+T5	Position_to_Know 1 118	The school my mother works at, plus the school district my cousin's 3 children are in, are utilizing school uniforms.
+T6	Consequence 494 538	Kids will find other reasons to bully others
+A9	Sentiment T6 Negative
+A10	Likelihood T6 3

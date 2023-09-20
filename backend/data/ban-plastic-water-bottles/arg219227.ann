@@ -1,0 +1,8 @@
+T1	Example 0 160	In New York City alone, the transportation of bottled water from western Europe released an estimated 3,800 tons of global warming pollution into the atmosphere
+T2	Example 162 302	In California, 18 million gallons of bottled water were shipped in from Fiji in 2006, producing about 2,500 tons of global warming pollution
+T3	Consequence 248 302	producing about 2,500 tons of global warming pollution
+A1	Likelihood T3 5
+A2	Sentiment T3 Negative
+T4	Consequence 80 160	released an estimated 3,800 tons of global warming pollution into the atmosphere
+A3	Likelihood T4 5
+A4	Sentiment T4 Negative

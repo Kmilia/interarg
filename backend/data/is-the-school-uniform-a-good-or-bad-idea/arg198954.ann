@@ -1,0 +1,15 @@
+T1	Consequence 59 114	not helping to student to express his/her individuality
+A1	Likelihood T1 4
+A2	Sentiment T1 Negative
+T2	Position_to_Know 132 145	uncomfortable
+T3	Position_to_Know 152 194	during winter time might very cold as well
+T4	Consequence 132 145	uncomfortable
+A3	Sentiment T4 Negative
+A4	Adjective T4
+A5	Likelihood T4 4
+#1	AnnotatorNotes T4	promotes discomfort
+T5	Consequence 171 186	might very cold
+A6	Sentiment T5 Negative
+A7	Adjective T5
+A8	Quantifier T5
+A9	Likelihood T5 4

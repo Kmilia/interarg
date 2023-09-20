@@ -1,0 +1,8 @@
+T1	Consequence 20 80	can get information from different resources in a short time
+A1	Sentiment T1 Positive
+A2	Potential T1
+A3	Likelihood T1 3
+T2	Consequence 99 146	must read a lot to get that much of information
+A4	Sentiment T2 Negative
+A5	Entity T2 Y
+A6	Likelihood T2 4

@@ -1,0 +1,18 @@
+T1	Consequence 438 461	Every pupil is the same
+A1	Likelihood T1 4
+A2	Sentiment T1 Positive
+T2	Consequence 469 491	would be easy to study
+A3	Likelihood T2 4
+A4	Sentiment T2 Positive
+T3	Consequence 496 526	not think about another things
+A5	Likelihood T3 2
+A6	Sentiment T3 Positive
+T4	Position_to_Know 339 363	t looks very good, smart
+T5	Consequence 383 436	no envy that somebody have really nice skirt or jeans
+A7	Likelihood T5 5
+A8	Sentiment T5 Positive
+T6	Consequence 339 356	t looks very good
+A9	Sentiment T6 Positive
+A10	Adjective T6
+A11	Likelihood T6 4
+#1	AnnotatorNotes T6	promotes fashion

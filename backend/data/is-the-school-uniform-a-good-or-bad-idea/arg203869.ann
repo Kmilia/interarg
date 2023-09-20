@@ -1,0 +1,7 @@
+T1	Position_to_Know 87 130	far less stressful than non-uniform college
+T2	Consequence 163 264	prevents people from showing off material wealth/ making others feel bad for not having 'cool' stuff.
+A1	Likelihood T2 5
+A2	Sentiment T2 Positive
+T3	Consequence 285 298	taken too far
+A3	Likelihood T3 4
+A4	Sentiment T3 Negative

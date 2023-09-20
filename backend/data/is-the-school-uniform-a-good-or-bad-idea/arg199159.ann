@@ -1,0 +1,12 @@
+T2	Consequence 125 178	makes troubles within students and teachers relations
+T3	Consequence 235 257	limiting their freedom
+A1	Likelihood T3 4
+A2	Sentiment T3 Negative
+A3	Likelihood T2 3
+A4	Sentiment T2 Negative
+T4	Consequence 302 369	misunderstandings with the rest of people like parents and teachers
+A5	Likelihood T4 3
+A6	Sentiment T4 Negative
+T1	Consequence 282 289	problem
+A7	Sentiment T1 Negative
+A8	Likelihood T1 4

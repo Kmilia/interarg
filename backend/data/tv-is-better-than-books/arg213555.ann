@@ -1,0 +1,20 @@
+T1	Consequence 16 24	the soul
+A1	Likelihood T1 3
+A2	Sentiment T1 Positive
+T2	Consequence 32 68	don't destroy the morals of children
+A3	Likelihood T2 4
+A4	Sentiment T2 Positive
+T3	Consequence 76 117	throw the mind into a series of questions
+A5	Likelihood T3 4
+A6	Sentiment T3 Positive
+T4	Consequence 124 196	take the readers to mystical places, paradise, and even the kitchen sink
+A7	Likelihood T4 4
+A8	Sentiment T4 Positive
+T5	Consequence 203 282	change your perspective on life and often give the reader a sense of relativity
+A9	Likelihood T5 4
+A10	Sentiment T5 Positive
+T6	Example 336 397	Fahrenheit 451, the Night Circus, The Secret Garden, Inkheart
+T7	Analogy 311 334	It's as bad as nicotine
+A11	Sentiment T7 Negative
+T8	Analogy 284 309	Television is like a drug
+A12	Sentiment T8 Negative

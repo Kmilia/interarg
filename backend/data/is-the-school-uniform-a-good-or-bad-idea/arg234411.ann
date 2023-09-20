@@ -1,0 +1,12 @@
+T1	Consequence 133 209	provides equal status to all the students so that there is no gap among them
+A1	Likelihood T1 5
+A2	Sentiment T1 Positive
+T2	Consequence 246 367	rich students will wear new dresses everyday which the other students cannot afford and may lead to resentment among them
+A3	Prudential T2
+A4	Likelihood T2 4
+A5	Sentiment T2 Negative
+T3	Consequence 376 446	Some insensitive children may also mock other students wear old cloths
+A6	Prudential T3
+A7	Likelihood T3 4
+A8	Sentiment T3 Negative
+T4	Unsure 75 119	Some may be rich , some may not be that rich
