@@ -56,7 +56,7 @@ def parse_brat(topic):
                     l =	l.split('\t')
                     l2=l[1].split()
                     if len(l2) == 3:
-                    	new_l = [str(i)+l[0]] + [l2[0]] + [str(i)+l2[1]] + [l2[2]]
+                        new_l = [str(i)+l[0]] + [l2[0]] + [str(i)+l2[1]] + [l2[2]]
                     else:
                         new_l = [str(i)+l[0]] + [l2[0]] + [str(i)+l2[1]] + [""]
                     a = attribute(*new_l)
@@ -109,7 +109,7 @@ def create_sentence_vector(sentence):
     sentence_vector_lookup = dict()
     sentence_vectors = None
     try:
-    	sentence_vectors = sentence_to_vec(sentence_list, embedding_size)
+        sentence_vectors = sentence_to_vec(sentence_list, embedding_size)
     except ValueError:
         return {"knowledge_type": "Nothing"}
 
@@ -176,7 +176,7 @@ def most_similar(sentence_vector_lookup, knowledge_vector_lookup, attributes, se
             for token in doc:
             	if token.dep_ == 'ROOT':
                     if previous_token == "can":
-                    	return (sentence_text, []) #already corrected
+                        return (sentence_text, []) #already corrected
                     help_t = "Suggestion: Change '%s' to '%s'" % (token.text, 'can %s' % (token.lemma_))
                     action_t = 'can %s' % (token.lemma_)
                     lh = consequence_likelihood(best_attributes)
@@ -186,7 +186,7 @@ def most_similar(sentence_vector_lookup, knowledge_vector_lookup, attributes, se
                     text = sentence_text.replace(token.text, '<span id="%s">%s</span>' % (str(uuid), token.text))
                     html+=text + "</span>"
                     break
-            	previous_token=token.lemma_
+                previous_token=token.lemma_
             alert = {'id':uuid, 'help':help_t, 'action':action_t, 'detailed':detailed_t}
             return (html, alert)
         elif best_type == "Position_to_Know":
