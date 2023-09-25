@@ -1,22 +1,14 @@
 from flask import Flask, render_template
-
 from flask_restful import Api, Resource, reqparse
-
-from nltk.tokenize import sent_tokenize
-
 from flask import jsonify
-#from flask_cors import CORS
-#from model import argument
 import sys
+from model_gpt4 import get_feedback
 
 app = Flask(__name__, static_folder='../frontvue/dist/static',
             template_folder='../frontvue/dist')
-#CORS(app)
-
 
 api = Api(app)
 
-from model import get_feedback
 
 class Feedback(Resource):
     def get(self):
