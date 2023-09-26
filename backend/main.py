@@ -16,7 +16,7 @@ class Feedback(Resource):
         parser.add_argument('argument', location='args',type=str, help='Argument sent for feedback')
         parser.add_argument('topic', location='args',type=str, help='Topic')
         args = parser.parse_args()
-        d= get_feedback(args.argument, args.topic)
+        d= get_feedback(args.argument)
         print("d results")
         print(d, sys.stderr)
         return jsonify(d)
