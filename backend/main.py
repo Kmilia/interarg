@@ -12,7 +12,6 @@ class Feedback(Resource):
     def get(self):
         parser = reqparse.RequestParser()
         parser.add_argument('argument', location='args',type=str, help='Argument sent for feedback')
-        parser.add_argument('topic', location='args',type=str, help='Topic')
         args = parser.parse_args()
         d= get_feedback(args.argument)
         return jsonify(d)
