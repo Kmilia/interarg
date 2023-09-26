@@ -1,9 +1,9 @@
 module.exports = {
 	transpileDependencies: ["vuetify"],
-	assetsDir: "static",
+	assetsDir: "dist/static",
 	pwa: {
 		iconPaths: {
-			favicon32: "img/icons/favicon-32x32.png",
+			favicon32: "icons/favicon-32x32.png",
 		},
 	},
 };
