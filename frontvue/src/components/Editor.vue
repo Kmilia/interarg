@@ -49,44 +49,6 @@
 				</v-col>
 			</v-row>
 		</v-col>
-		<!--End Editor section -->
-		<!--Alerts section -->
-		<v-col cols="6">
-			<v-row> </v-row>
-			<v-row style="width: 700px">
-				<v-expansion-panels>
-					<v-expansion-panel
-						v-for="(item, i) in alert.alerts"
-						:key="i"
-					>
-						<v-expansion-panel-header>
-							<v-alert
-								color="cyan"
-								border="left"
-								elevation="0"
-								colored-border
-								>{{ item.help }}</v-alert
-							>
-						</v-expansion-panel-header>
-						<v-expansion-panel-content style="margin-left: 50px">
-							<v-alert
-								color="deep-purple accent-4"
-								border="left"
-								elevation="0"
-								colored-border
-							>
-								<div v-html="item.detailed"></div>
-								<v-divider
-									class="my-4 info"
-									style="opacity: 0.22"
-								></v-divider>
-							</v-alert>
-						</v-expansion-panel-content>
-					</v-expansion-panel>
-				</v-expansion-panels>
-			</v-row>
-		</v-col>
-		<!--End alerts section -->
 	</v-row>
 </template>
 
@@ -177,14 +139,17 @@ body {
 	font-size: 23pt !important;
 	margin-left: 50px !important;
 }
+
 .v-input,
 .v-input__slot,
 .v-input__control {
 	min-height: 70px;
 }
+
 .v-select__selections {
 	min-height: 70px;
 }
+
 .v-select {
 	font-size: 1.2em;
 }
@@ -192,33 +157,12 @@ body {
 .v-select__selections {
 	line-height: 30px !important;
 }
+
 [contenteditable="true"]:empty:before {
 	content: attr(placeholder);
 	color: grey;
 	pointer-events: none;
 	display: block; /* For Firefox */
-}
-.text-error {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	vertical-align: top;
-}
-.text-error:before {
-	content: "\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f\fe4f"; /* too much? */
-	max-width: 100%;
-	position: absolute;
-	white-space: nowrap;
-	bottom: -3px;
-}
-.text-error.grammar:before {
-	color: green;
-}
-.text-error.spelling:before {
-	color: red;
-}
-.text-error.other:before {
-	color: blue;
 }
 
 /* Tooltip container */
