@@ -646,7 +646,7 @@
 	},
 	b278: function (e, t, o) {},
 	cf05: function (e, t, o) {
-		e.exports = o.p + "static/img/logo.c3b11b01.png";
+		e.exports = o.p + "static/icons/favicon-16x16.png";
 	},
 });
 //# sourceMappingURL=app.de2abeda.js.map
