@@ -1,8 +1,11 @@
 # Sensitive folder
 openai_keys
 
-# Frontvue Installation folder
-frontvue/node_modules
+# Installation folder
+node_modules/
+package.json
+package-lock.json
+.prettierrc
 
 # MAC files
 .DS_Store
