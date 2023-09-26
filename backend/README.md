@@ -8,6 +8,7 @@
 - spacy==2.3.2
 - scikit-learn==0.23.2
 - shortuuid==1.0.1
+- openai==0.28.0
 
 ### Required Spacy models
 Download en_core_web_lg model before running the app
