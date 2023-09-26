@@ -1,4 +1,4 @@
-# InterArg - An argumentative feedback system
+# InterArg - An Argumentative Feedback System
 
 ## Requirements Backend
 
@@ -13,7 +13,9 @@
 **Required Spacy models**
 
 Download en_core_web_lg model before running the app
+```
 python -m spacy download en_core_web_lg
+```
 
 ## Requirements Frontend
 
@@ -30,10 +32,14 @@ python -m spacy download en_core_web_lg
 ## Running the system
 
 -   Compile the frontend using npm
-    cd frontvue && npm run build && cd ..
+```
+cd frontvue && npm run build && cd ..
+```
 
 -   Export and run flask app 
-    export FLASK_APP=backend/main.py && python3 -m flask run
+```
+export FLASK_APP=backend/main.py && python3 -m flask run
+```
 
 ## Querying for feedback
 
