@@ -1,30 +1,47 @@
 import openai
 import shortuuid
 import pandas as pd
+import spacy
 
+_GPT_MODEL = "gpt-3.5-turbo" #"gpt-4"
 _KEYS = pd.read_csv("openai_keys/openai_id.csv").to_dict("records")[0]
+_NLP = spacy.load("en_core_web_lg")
+
 openai.api_key = _KEYS["openai.api_key"]
 openai.organization = _KEYS["openai.organization"]
 
-def get_feedback(paragraph):
-    prompt = f"Give a feedback on how to improve this argument '{paragraph}'"
-    return send_prompt(prompt, paragraph)
+def get_feedback(paragraph: str) -> dict:
+    messages = create_messages(paragraph)
+    response = generate_feedback(messages)
+    return serialize_feedback(response, paragraph)
 
-def send_prompt(prompt, paragraph, max_token=500, outputs=1):
-    response = openai.Completion.create(
-        model="text-davinci-003",
-        prompt=prompt,
-        max_tokens=max_token,
-        n=outputs
+def create_messages(paragraph: str) -> list:
+    content = (
+        f"Give a feedback on how to improve the logic of this argument '{paragraph}'."
+            "The feedback should have the following format (N being the sentence number):\n"
+            "SENTENCE N: \n"
+        f""
     )
-    output = list()
-    for choice in response['choices']:
-        output.append(choice['text'].strip())
-    
-    uuid = shortuuid.uuid()
-    alert = [{"id":uuid, "help": "Suggestion", "action": "Consider this feedback:", 'detailed': " ".join(output)}]
-    html = f"<span class='error'><span id={uuid}>{paragraph}</span></span>"
+    return [{"role": "user", "content": content}]
 
-    return {'html': html, 'alerts': alert}
+def generate_feedback(messages: str) -> str:
+    response = openai.ChatCompletion.create(
+        model= _GPT_MODEL,
+        messages = messages
+    )
+    return response['choices'][0]['message']['content']
 
-#test_para = "I love uniforms because everyone looks the same. So it removes inequalities among students. "
+def serialize_feedback(output: str, paragraph:str) -> dict:
+    comments = output.split("\n\n")
+    print(output)
+    sentences = _NLP(paragraph).sents
+    alert = []
+    html = []
+    for index, sentence in enumerate(sentences):
+        uuid = shortuuid.uuid()
+        comment_parts = comments[index].partition(":")
+        alert.append({"id":uuid, "help": comment_parts[0], "action": "Consider this feedback:", 'detailed': comment_parts[2]})
+        html.append(f"<span class='error'><span id={uuid}>{sentence} </span></span>")
+    return {'html': "".join(html), 'alerts': alert}
+
+#I love uniforms because everyone looks the same. So, it removes inequalities among students. Not giving importance to physical looks will help students focus on their work.
