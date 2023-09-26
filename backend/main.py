@@ -1,14 +1,12 @@
 from flask import Flask, render_template
 from flask_restful import Api, Resource, reqparse
 from flask import jsonify
-import sys
 from model_gpt4 import get_feedback
 
 app = Flask(__name__, static_folder='../frontvue/dist/static',
             template_folder='../frontvue/dist')
 
 api = Api(app)
-
 
 class Feedback(Resource):
     def get(self):
@@ -17,8 +15,6 @@ class Feedback(Resource):
         parser.add_argument('topic', location='args',type=str, help='Topic')
         args = parser.parse_args()
         d= get_feedback(args.argument)
-        print("d results")
-        print(d, sys.stderr)
         return jsonify(d)
     
 api.add_resource(Feedback, '/api/feedback/')
