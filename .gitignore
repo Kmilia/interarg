@@ -1,4 +1,5 @@
 .DS_Store
+openai_keys
 
 # Byte-compiled / optimized / DLL filesx
 __pycache__/
