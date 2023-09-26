@@ -1,5 +1,11 @@
-.DS_Store
+# Sensitive folder
 openai_keys
+
+# Frontvue Installation folder
+frontvue/node_modules
+
+# MAC files
+.DS_Store
 
 # Byte-compiled / optimized / DLL filesx
 __pycache__/
