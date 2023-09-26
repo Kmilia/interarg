@@ -1,6 +1,0 @@
-T1	Consequence 11 39	reduce our electricity bills
-A1	Sentiment T1 Positive
-A2	Likelihood T1 3
-T2	Consequence 64 78	spending money
-A3	Sentiment T2 Positive
-A4	Likelihood T2 4

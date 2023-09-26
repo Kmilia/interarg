@@ -1,6 +1,0 @@
-T1	Consequence 302 356	prevent problems that not wearing uniforms would cause
-A1	Likelihood T1 5
-A2	Sentiment T1 Positive
-T2	Position_to_Know 226 248	Maybe I'm exaggerating
-T3	Unsure 0 218	If you want your kids to wear uniforms, go to a school that allows that. But don't go crying to me that your kids are underachieving, easily-distracted, derelicts that can't focus their attention for 5 minutes in class
-#1	AnnotatorNotes T3	Ad Hominem?

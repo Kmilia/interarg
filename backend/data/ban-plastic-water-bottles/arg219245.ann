@@ -1,7 +1,0 @@
-T1	Expert 29 108	According to research and consulting done by the Beverage Marketing Corporation
-T2	Consequence 293 338	produced over 130,000 million liters of water
-A1	Likelihood T2 5
-A2	Sentiment T2 Positive
-T3	Consequence 345 456	produced roughly 35,000 million dollars in revenue for the world's thousands of bottled water companies in 2001
-A3	Likelihood T3 5
-A4	Sentiment T3 Positive

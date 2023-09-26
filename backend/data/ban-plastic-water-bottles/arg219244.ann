@@ -1,6 +1,0 @@
-T1	PopularOpinion 65 112	Many claim that this is due to European culture
-T2	Example 120 235	the continent has had very polluted waters due to agriculture and industry dating back to the Industrial Revolution
-T3	Consequence 264 271	help us
-A1	Likelihood T3 5
-A2	Sentiment T3 Positive
-T4	Example 0 63	Western Europe consumes almost 50% of the world's bottled water

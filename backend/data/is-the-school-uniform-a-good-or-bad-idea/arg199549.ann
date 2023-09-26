@@ -1,9 +1,0 @@
-T1	Consequence 59 102	deprive the children of their individuality
-A1	Likelihood T1 4
-A2	Sentiment T1 Negative
-T2	Consequence 149 209	opposes the spirit of unity in diversity and its celebration
-A3	Likelihood T2 3
-A4	Sentiment T2 Negative
-T3	Consequence 233 255	restrict socialization
-A5	Likelihood T3 4
-A6	Sentiment T3 Negative

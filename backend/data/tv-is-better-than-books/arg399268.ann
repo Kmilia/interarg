@@ -1,5 +1,0 @@
-T1	Example 0 47	"you can get the ""Foxtel Go"" app on your Ipad
-T2	Consequence 55 100	can watch TV where ever and whenever you want
-A1	Sentiment T2 Positive
-A2	Potential T2
-A3	Likelihood T2 4

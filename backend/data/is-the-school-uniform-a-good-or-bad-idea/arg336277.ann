@@ -1,9 +1,0 @@
-T2	Position_to_Know 41 65	doesn't feel comfortable
-T3	Consequence 42 65	oesn't feel comfortable
-A3	Sentiment T3 Negative
-A4	Adjective T3
-A5	Likelihood T3 3
-#1	AnnotatorNotes T3	promote discomfort
-T1	Consequence 4 33	kids lose their individuality
-A1	Sentiment T1 Negative
-A2	Likelihood T1 5

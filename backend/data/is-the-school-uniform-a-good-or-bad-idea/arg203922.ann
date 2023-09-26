@@ -1,8 +1,0 @@
-T1	Position_to_Know 74 92	signifies its goal
-T2	Example 105 233	i wore white shirt and blue skirt in my school days, white color is an indication of peace and blue of fidelity in relationships
-T3	Consequence 266 292	removes the wall of status
-A1	Likelihood T3 5
-A2	Sentiment T3 Positive
-T4	Consequence 302 403	depicts that whether a child comes from high or low class they all are treated equally under one roof
-A3	Likelihood T4 5
-A4	Sentiment T4 Positive

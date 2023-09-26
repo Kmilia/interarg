@@ -1,9 +1,0 @@
-T1	Consequence 25 45	economize your money
-A1	Likelihood T1 3
-A2	Sentiment T1 Positive
-T2	Consequence 155 187	not necessary to use electricity
-A3	Likelihood T2 3
-A4	Sentiment T2 Positive
-T3	Consequence 98 144	you do not need to buy any devices for reading
-A5	Likelihood T3 3
-A6	Sentiment T3 Positive

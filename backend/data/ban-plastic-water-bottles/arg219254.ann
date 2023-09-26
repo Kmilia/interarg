@@ -1,7 +1,0 @@
-T1	Example 20 72	Pepsi's Aquafina or Coca-Cola's Dasani bottled water
-T2	Consequence 117 170	purchased from vending machines alongside soft drinks
-A1	Likelihood T2 5
-A2	Sentiment T2 Neutral
-T3	Unsure 364 419	Most municipal water costs less than 1 cent per gallon.
-T4	Unsure 268 362	These two brands are essentially filtered tap water, bottled close to their distribution point
-T5	Unsure 196 266	Assuming you can find a $1 machine, that works out to 5 cents an ounce
