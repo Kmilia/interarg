@@ -20,15 +20,15 @@ python -m spacy download en_core_web_lg
 
 ## Requirements Frontend
 
--   "8": "0.0.1"
--   "axios": "^0.19.2"
--   "core-js": "^3.6.4"
--   "ngrok": "^3.2.7"
--   "register-service-worker": "^1.6.2"
--   "vue": "^2.6.11"
--   "vue-router": "^3.1.5"
--   "vuetify": "^2.2.11"
--   "vuex": "^3.1.2"
+-   "8": "^0.0.1",
+-   "axios": "^1.5.1",
+-   "core-js": "^3.32.2",
+-   "ngrok": "^5.0.0-beta.2",
+-   "register-service-worker": "^1.7.2",
+-   "vue": "^3.3.4",
+-   "vue-router": "^4.2.5",
+-   "vuetify": "^3.3.19",
+-   "vuex": "^4.1.0"
 
 ## Running the system
 
