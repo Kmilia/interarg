@@ -13,30 +13,33 @@
 **Required Spacy models**
 
 Download en_core_web_lg model before running the app
+
 ```
 python -m spacy download en_core_web_lg
 ```
 
 ## Requirements Frontend
 
-- "8": "0.0.1"
-- "axios": "^0.19.2"
-- "core-js": "^3.6.4"
-- "ngrok": "^3.2.7"
-- "register-service-worker": "^1.6.2"
-- "vue": "^2.6.11"
-- "vue-router": "^3.1.5"
-- "vuetify": "^2.2.11"
-- "vuex": "^3.1.2"
+-   "8": "0.0.1"
+-   "axios": "^0.19.2"
+-   "core-js": "^3.6.4"
+-   "ngrok": "^3.2.7"
+-   "register-service-worker": "^1.6.2"
+-   "vue": "^2.6.11"
+-   "vue-router": "^3.1.5"
+-   "vuetify": "^2.2.11"
+-   "vuex": "^3.1.2"
 
 ## Running the system
 
 -   Compile the frontend using npm
+
 ```
 cd frontvue && npm run build && cd ..
 ```
 
--   Export and run flask app 
+-   Export and run flask app
+
 ```
 export FLASK_APP=backend/main.py && python3 -m flask run
 ```
@@ -54,7 +57,6 @@ Backend response is a json object such as the following
 "related_argument": "smoking is good so we should ban it.",
 "parent": "smoking has always been a problem."
 }
-
 
 ## Project setup Frontend
 
