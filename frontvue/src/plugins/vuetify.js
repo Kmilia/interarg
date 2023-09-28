@@ -1,6 +1,7 @@
-import Vue from "vue";
-import Vuetify from "vuetify/lib";
+import { createVuetify } from "vuetify/lib/framework";
 
-Vue.use(Vuetify);
+const vuetify = createVuetify({
+    ssr: true,
+})
 
-export default new Vuetify({});
+export default vuetify;
