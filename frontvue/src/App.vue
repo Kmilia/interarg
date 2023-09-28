@@ -6,11 +6,9 @@
 			</div>
 		</v-app-bar>
 
-		<v-content>
-			<v-container fluid>
-				<Alert />
-			</v-container>
-		</v-content>
+		<v-container fluid>
+			<Alert />
+		</v-container>
 	</v-app>
 </template>
 

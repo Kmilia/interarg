@@ -59,7 +59,7 @@
 						v-for="(item, i) in alert.alerts"
 						:key="i"
 					>
-						<v-expansion-panel-header>
+						<v-expansion-panel-title>
 							<v-alert
 								color="cyan"
 								border="left"
@@ -67,8 +67,8 @@
 								colored-border
 								>{{ item.help }}</v-alert
 							>
-						</v-expansion-panel-header>
-						<v-expansion-panel-content style="margin-left: 50px">
+						</v-expansion-panel-title>
+						<v-expansion-panel-text style="margin-left: 50px">
 							<v-alert
 								color="deep-purple accent-4"
 								border="left"
@@ -81,7 +81,7 @@
 									style="opacity: 0.22"
 								></v-divider>
 							</v-alert>
-						</v-expansion-panel-content>
+						</v-expansion-panel-text>
 					</v-expansion-panel>
 				</v-expansion-panels>
 			</v-row>
