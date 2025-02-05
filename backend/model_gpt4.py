@@ -43,5 +43,3 @@ def serialize_feedback(output: str, paragraph:str) -> dict:
         alert.append({"id":uuid, "help": comment_parts[0], "action": "Consider this feedback:", 'detailed': comment_parts[2]})
         html.append(f"<span class='error'><span id={uuid}>{sentence} </span></span>")
     return {'html': "".join(html), 'alerts': alert}
-
-#I love uniforms because everyone looks the same. So, it removes inequalities among students. Not giving importance to physical looks will help students focus on their work.
